@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1BC0812C-EF5B-4A0A-B3A1-2089E62471B6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VotingSystem</RootNamespace>
+    <AssemblyName>VotingSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.8.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCandidate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCandidate.Designer.cs">
+      <DependentUpon>AddCandidate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddElection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddElection.Designer.cs">
+      <DependentUpon>AddElection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddVoter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddVoter.Designer.cs">
+      <DependentUpon>AddVoter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteCandidate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteCandidate.Designer.cs">
+      <DependentUpon>DeleteCandidate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteElection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteElection.Designer.cs">
+      <DependentUpon>DeleteElection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteVoter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteVoter.Designer.cs">
+      <DependentUpon>DeleteVoter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extra.Designer.cs">
+      <DependentUpon>Extra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="faceDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>faceDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent.Designer.cs">
+      <DependentUpon>MDIParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="qb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="qb.Designer.cs">
+      <DependentUpon>qb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result.Designer.cs">
+      <DependentUpon>Result.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCandidate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateCandidate.Designer.cs">
+      <DependentUpon>UpdateCandidate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateElection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateElection.Designer.cs">
+      <DependentUpon>UpdateElection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateVoter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateVoter.Designer.cs">
+      <DependentUpon>UpdateVoter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vote.Designer.cs">
+      <DependentUpon>Vote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VoterLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VoterLogin.Designer.cs">
+      <DependentUpon>VoterLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Voting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Voting.Designer.cs">
+      <DependentUpon>Voting.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddCandidate.resx">
+      <DependentUpon>AddCandidate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddElection.resx">
+      <DependentUpon>AddElection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddVoter.resx">
+      <DependentUpon>AddVoter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteCandidate.resx">
+      <DependentUpon>DeleteCandidate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteElection.resx">
+      <DependentUpon>DeleteElection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteVoter.resx">
+      <DependentUpon>DeleteVoter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extra.resx">
+      <DependentUpon>Extra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent.resx">
+      <DependentUpon>MDIParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="qb.resx">
+      <DependentUpon>qb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Result.resx">
+      <DependentUpon>Result.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCandidate.resx">
+      <DependentUpon>UpdateCandidate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateElection.resx">
+      <DependentUpon>UpdateElection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateVoter.resx">
+      <DependentUpon>UpdateVoter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vote.resx">
+      <DependentUpon>Vote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VoterLogin.resx">
+      <DependentUpon>VoterLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Voting.resx">
+      <DependentUpon>Voting.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="faceDataSet.xsc">
+      <DependentUpon>faceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="faceDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>faceDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="faceDataSet.xss">
+      <DependentUpon>faceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
